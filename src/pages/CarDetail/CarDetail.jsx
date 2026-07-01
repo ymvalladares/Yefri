@@ -45,9 +45,9 @@ export default function CarDetail() {
   if (!car) {
     return (
       <Container maxWidth="xl" sx={{ py: 8, textAlign: "center" }}>
-        <Typography variant="h4" gutterBottom>Car not found</Typography>
+        <Typography variant="h4" gutterBottom>Auto no encontrado</Typography>
         <Button variant="contained" onClick={() => navigate("/catalog")}>
-          Back to Catalog
+          Volver al Catálogo
         </Button>
       </Container>
     );
@@ -71,7 +71,7 @@ export default function CarDetail() {
             "&:hover": { color: "#2563EB", bgcolor: "transparent" },
           }}
         >
-          Back to results
+          Volver a los resultados
         </Button>
       </Container>
 
@@ -179,10 +179,10 @@ export default function CarDetail() {
                     "&:hover": { bgcolor: "#1D4ED8" },
                   }}
                 >
-                  Schedule Test Drive
+                  Programar Prueba de Manejo
                 </Button>
                 <Button variant="outlined" size="large" fullWidth sx={{ py: 1.5 }}>
-                  Contact Dealer
+                  Contactar Concesionario
                 </Button>
               </Stack>
 
@@ -226,7 +226,7 @@ export default function CarDetail() {
             }}
           >
             <Typography sx={{ fontWeight: 700, fontSize: "0.95rem", color: "#0F172A" }}>
-              Features & Equipment
+              Características y Equipamiento
             </Typography>
           </Box>
           <Box sx={{ px: { xs: 2.5, md: 4 }, py: { xs: 2.5, md: 3 } }}>
@@ -249,9 +249,9 @@ export default function CarDetail() {
         <Box sx={{ mt: 4 }}>
           <Grid container spacing={2}>
             {[
-              { icon: <Shield sx={{ fontSize: 24 }} />, title: "Multi-Point Inspection", desc: "150+ point inspection completed" },
-              { icon: <CarRepair sx={{ fontSize: 24 }} />, title: "Vehicle History Report", desc: "Clean history, no accidents" },
-              { icon: <DirectionsCar sx={{ fontSize: 24 }} />, title: "Roadside Assistance", desc: "24/7 emergency support included" },
+              { icon: <Shield sx={{ fontSize: 24 }} />, title: "Inspección Multipunto", desc: "Inspección de más de 150 puntos completada" },
+              { icon: <CarRepair sx={{ fontSize: 24 }} />, title: "Reporte de Historial", desc: "Historial limpio, sin accidentes" },
+              { icon: <DirectionsCar sx={{ fontSize: 24 }} />, title: "Asistencia en Carretera", desc: "Soporte de emergencia 24/7 incluido" },
             ].map((item, i) => (
               <Grid size={{ xs: 12, sm: 4 }} key={i}>
                 <Box

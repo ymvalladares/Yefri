@@ -81,9 +81,9 @@ export default function Catalog() {
         <Container maxWidth="xl" sx={{ pt: 3 }}>
           <Box sx={{ display: "flex", justifyContent: "flex-end", mb: 2 }}>
             <FormControl size="small" sx={{ minWidth: 160 }}>
-              <InputLabel sx={{ color: "#64748B" }}>Sort By</InputLabel>
+              <InputLabel sx={{ color: "#64748B" }}>Ordenar Por</InputLabel>
               <Select
-                label="Sort By"
+                label="Ordenar Por"
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value)}
                 sx={{
@@ -101,9 +101,9 @@ export default function Catalog() {
                   },
                 }}
               >
-                <MenuItem value="newest">Newest</MenuItem>
-                <MenuItem value="price-low">Price: Low to High</MenuItem>
-                <MenuItem value="price-high">Price: High to Low</MenuItem>
+                <MenuItem value="newest">Más Recientes</MenuItem>
+                <MenuItem value="price-low">Precio: Menor a Mayor</MenuItem>
+                <MenuItem value="price-high">Precio: Mayor a Menor</MenuItem>
               </Select>
             </FormControl>
           </Box>
@@ -157,13 +157,13 @@ export default function Catalog() {
             >
               <Speed sx={{ fontSize: 64, color: "#CBD5E1", mb: 2 }} />
               <Typography variant="h5" gutterBottom>
-                No cars found
+                No se encontraron autos
               </Typography>
               <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
-                Try adjusting your filters or search terms
+                Intenta ajustar tus filtros o términos de búsqueda
               </Typography>
               <Button variant="outlined" onClick={resetFilters}>
-                Clear All Filters
+                Limpiar Todos los Filtros
               </Button>
             </Box>
           )}

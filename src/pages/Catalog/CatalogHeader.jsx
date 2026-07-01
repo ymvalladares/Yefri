@@ -42,10 +42,10 @@ const LINE = "rgba(244,241,234,0.12)";
 // Una sola fuente de verdad para las métricas — antes se repetían
 // "entrega" y conceptos similares entre STATS, HIGHLIGHTS y FEATURES.
 const STATS = [
-  { icon: DirectionsCarFilledIcon, value: "248+", label: "Vehicles" },
-  { icon: VerifiedOutlinedIcon, value: "32", label: "Brands" },
-  { icon: StarRoundedIcon, value: "4.8", label: "Rating" },
-  { icon: LocalShippingOutlinedIcon, value: "24h", label: "Delivery" },
+  { icon: DirectionsCarFilledIcon, value: "248+", label: "Vehículos" },
+  { icon: VerifiedOutlinedIcon, value: "32", label: "Marcas" },
+  { icon: StarRoundedIcon, value: "4.8", label: "Calificación" },
+  { icon: LocalShippingOutlinedIcon, value: "24h", label: "Entrega" },
 ];
 
 const BRANDS = [
@@ -137,7 +137,7 @@ export default function CatalogHeader({
               textTransform: "uppercase",
             }}
           >
-            2026 Catalog
+            Catálogo 2026
           </Typography>
         </Stack>
 
@@ -153,7 +153,7 @@ export default function CatalogHeader({
               width: "100%",
             }}
           >
-            Find the car that suits you
+            Encuentra el auto ideal para ti
           </Typography>
 
           <Typography
@@ -167,9 +167,9 @@ export default function CatalogHeader({
               mt: 3,
             }}
           >
-            Hundreds of verified vehicles with transparent history and
-            financing tailored to you. Browse the catalog and find the right
-            car in minutes.
+            Cientos de vehículos verificados con historial transparente y
+            financiamiento adaptado a ti. Explora el catálogo y encuentra el auto
+            adecuado en minutos.
           </Typography>
         </Box>
 
@@ -246,7 +246,7 @@ export default function CatalogHeader({
               }}
             >
               <TextField
-                placeholder="Search by brand, model or keyword..."
+                placeholder="Buscar por marca, modelo o palabra clave..."
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
                 size="small"
@@ -298,7 +298,7 @@ export default function CatalogHeader({
                     "&:hover": { color: ACCENT, bgcolor: "transparent" },
                   }}
                 >
-                  {showFilters ? "Hide" : "Show"} filters
+                  {showFilters ? "Ocultar" : "Mostrar"} filtros
                 </Button>
                 {activeCount > 0 && (
                   <Button
@@ -311,7 +311,7 @@ export default function CatalogHeader({
                       "&:hover": { color: ACCENT },
                     }}
                   >
-                    Clear
+                    Limpiar
                   </Button>
                 )}
               </Stack>
@@ -328,31 +328,31 @@ export default function CatalogHeader({
             >
               <FilterRow>
                 <FilterSelect
-                  label="Brand"
+                  label="Marca"
                   value={filters.brand}
                   onChange={(v) => updateFilter("brand", v)}
                   options={uniqueValues("brand")}
                 />
                 <FilterSelect
-                  label="Category"
+                  label="Categoría"
                   value={filters.category}
                   onChange={(v) => updateFilter("category", v)}
                   options={uniqueValues("category")}
                 />
                 <FilterSelect
-                  label="Status"
+                  label="Estado"
                   value={filters.titleStatus}
                   onChange={(v) => updateFilter("titleStatus", v)}
                   options={uniqueValues("titleStatus")}
                 />
                 <FilterSelect
-                  label="Fuel"
+                  label="Combustible"
                   value={filters.fuel}
                   onChange={(v) => updateFilter("fuel", v)}
                   options={uniqueValues("fuel")}
                 />
                 <FilterSelect
-                  label="Transmission"
+                  label="Transmisión"
                   value={filters.transmission}
                   onChange={(v) => updateFilter("transmission", v)}
                   options={uniqueValues("transmission")}

@@ -8,22 +8,22 @@ const ACCENT = "#E8A23D";
 
 const FEATURES = [
   {
-    title: "Nationwide Shipping",
-    description: "We offer nationwide shipping across the United States.",
+    title: "Envío a Todo el País",
+    description: "Ofrecemos envío a nivel nacional en todos los Estados Unidos.",
   },
   {
-    title: "White Glove Delivery",
+    title: "Entrega Premium",
     description:
-      "We bring your dream car to your doorstep, anywhere in the city.",
+      "Llevamos tu auto soñado hasta tu puerta, en cualquier lugar de la ciudad.",
   },
   {
-    title: "24/7 Concierge",
-    description: "A dedicated specialist available around the clock for you.",
+    title: "Atención 24/7",
+    description: "Un especialista dedicado disponible las 24 horas para ti.",
   },
   {
-    title: "Fully Insured",
+    title: "Totalmente Asegurado",
     description:
-      "Comprehensive coverage included — drive with total peace of mind.",
+      "Cobertura completa incluida — conduce con total tranquilidad.",
   },
 ];
 
@@ -58,7 +58,7 @@ export default function Features({
                 mb: 2,
               }}
             >
-              Why DriveLux
+              Por Qué MOTORX
             </Typography>
 
             <Typography
@@ -77,9 +77,9 @@ export default function Features({
                 mb: 3,
               }}
             >
-              Experience Luxury
+              Experimenta el Lujo
               <br />
-              Without Compromise
+              Sin Compromisos
             </Typography>
 
             <Typography
@@ -92,9 +92,9 @@ export default function Features({
                 mb: 4.5,
               }}
             >
-              We don't just rent cars. We create unforgettable experiences that
-              begin the moment you reach out and last long after you return the
-              keys.
+              No solo vendemos autos. Creamos experiencias inolvidables que
+              comienzan desde el primer contacto y continúan mucho después de
+              que recibes las llaves.
             </Typography>
 
             <Grid container columnSpacing={{ xs: 2, sm: 3 }} rowSpacing={3}>
@@ -153,7 +153,7 @@ export default function Features({
               <Box
                 component="img"
                 src={imageLeft}
-                alt="Luxury SUV"
+                alt="SUV de lujo"
                 sx={{
                   position: "absolute",
                   left: 0,
@@ -168,7 +168,7 @@ export default function Features({
               <Box
                 component="img"
                 src={imageRight}
-                alt="Sports car"
+                alt="Auto deportivo"
                 sx={{
                   position: "absolute",
                   right: 0,

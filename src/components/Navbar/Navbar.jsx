@@ -11,19 +11,19 @@ import { Menu, Close, ArrowForward, DirectionsCar } from "@mui/icons-material";
 import { useNavigate, useLocation } from "react-router-dom";
 
 const navLinks = [
-  { label: "Home", path: "/" },
+  { label: "Inicio", path: "/" },
   {
-    label: "Cars",
+    label: "Autos",
     dropdown: true,
     options: [
-      { label: "All Cars", path: "/catalog" },
-      { label: "New Cars", path: "/catalog?condition=New" },
-      { label: "Used Cars", path: "/catalog?condition=Used" },
-      { label: "Electric", path: "/catalog?fuel=Electric" },
+      { label: "Todos los Autos", path: "/catalog" },
+      { label: "Autos Nuevos", path: "/catalog?condition=New" },
+      { label: "Autos Usados", path: "/catalog?condition=Used" },
+      { label: "Eléctricos", path: "/catalog?fuel=Electric" },
     ],
   },
-  { label: "About", path: "/#about" },
-  { label: "Contact", path: "/#contact" },
+  { label: "Nosotros", path: "/#about" },
+  { label: "Contacto", path: "/#contact" },
 ];
 
 const Navbar = () => {
@@ -238,7 +238,7 @@ const Navbar = () => {
                   },
                 }}
               >
-                Browse Cars
+                Browse Autos
               </Button>
             </Stack>
           )}
@@ -366,7 +366,7 @@ const Navbar = () => {
                   },
                 }}
               >
-                Browse Cars
+                Browse Autos
               </Button>
             </Stack>
           </Stack>

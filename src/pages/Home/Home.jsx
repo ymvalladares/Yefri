@@ -83,7 +83,7 @@ export default function Home() {
             }}
           >
             <Chip
-              label="Trusted by 15,000+ customers"
+              label="Con la confianza de más de 15,000 clientes"
               sx={{
                 bgcolor: "rgba(37,99,235,0.9)",
                 color: "#fff",
@@ -108,11 +108,11 @@ export default function Home() {
                 },
               }}
             >
-              Drive Your{" "}
+              Conduce el Auto{" "}
               <Box component="span" sx={{ color: "#2563EB" }}>
-                Dream
+                de Tus Sueños
               </Box>{" "}
-              Car Today
+              Hoy
             </Typography>
             <Typography
               variant="h6"
@@ -129,8 +129,8 @@ export default function Home() {
                 },
               }}
             >
-              Discover thousands of quality vehicles from trusted dealers.
-              Unlimited mileage · No hidden fees · Free cancellation
+              Descubre miles de vehículos de calidad de concesionarios confiables.
+              Kilometraje ilimitado · Sin cargos ocultos · Cancelación gratuita
             </Typography>
             <Stack
               direction={{ xs: "column", sm: "row" }}
@@ -150,7 +150,7 @@ export default function Home() {
                   "&:hover": { bgcolor: "#1D4ED8" },
                 }}
               >
-                Browse Cars
+                Ver Autos
               </Button>
               <Button
                 variant="outlined"
@@ -168,7 +168,7 @@ export default function Home() {
                   },
                 }}
               >
-                Contact Us
+                Contáctanos
               </Button>
             </Stack>
           </MuiBox>
@@ -201,7 +201,7 @@ export default function Home() {
               },
             }}
           >
-            Featured Vehicles
+            Vehículos Destacados
           </Typography>
           <Typography
             variant="body1"
@@ -212,8 +212,8 @@ export default function Home() {
               fontSize: { xs: "0.85rem", sm: "0.95rem", md: "1rem" },
             }}
           >
-            Hand-picked selection of our most popular cars, trusted by thousands
-            of happy customers.
+            Selección cuidadosa de nuestros autos más populares, con la confianza de miles
+            de clientes satisfechos.
           </Typography>
         </MuiBox>
         <MuiBox sx={{ px: { xs: 2, sm: 3, md: 4, lg: 6, xl: 8 } }}>
@@ -245,7 +245,7 @@ export default function Home() {
               "&:hover": { bgcolor: "#1E293B" },
             }}
           >
-            View All Inventory
+            Ver Todo el Inventario
           </Button>
         </MuiBox>
       </Container>
@@ -268,9 +268,9 @@ export default function Home() {
               mb: 2,
             }}
           >
-            Ready to Find Your{" "}
+            ¿Listo para Encontrar el Auto{" "}
             <Box component="span" sx={{ color: "#2563EB" }}>
-              Dream Car
+              de Tus Sueños
             </Box>
             ?
           </Typography>
@@ -283,7 +283,7 @@ export default function Home() {
               fontSize: { xs: "0.95rem", md: "1.05rem" },
             }}
           >
-            Contact us today to schedule a test drive or learn more about our inventory.
+            Contáctanos hoy para programar una prueba de manejo o conocer más sobre nuestro inventario.
           </Typography>
           <Box sx={{ display: "flex", justifyContent: "center", mt: 3 }}>
             <Stack
@@ -305,7 +305,7 @@ export default function Home() {
                   "&:hover": { bgcolor: "#1D4ED8" },
                 }}
               >
-                Contact Us
+                Contáctanos
               </Button>
               <Button
                 variant="outlined"
@@ -322,7 +322,7 @@ export default function Home() {
                   "&:hover": { bgcolor: "rgba(255,255,255,0.1)", borderColor: "rgba(255,255,255,0.5)" },
                 }}
               >
-                Browse Inventory
+                Ver Inventario
               </Button>
             </Stack>
           </Box>

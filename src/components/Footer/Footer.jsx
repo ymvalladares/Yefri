@@ -4,21 +4,21 @@ import { Link as RouterLink } from "react-router-dom";
 
 const footerLinks = {
   company: [
-    { label: "About Us", href: "#" },
-    { label: "Careers", href: "#" },
-    { label: "Press", href: "#" },
+    { label: "Nosotros", href: "#" },
+    { label: "Carreras", href: "#" },
+    { label: "Prensa", href: "#" },
     { label: "Blog", href: "#" },
   ],
   support: [
-    { label: "Help Center", href: "#" },
-    { label: "Contact Us", href: "#" },
-    { label: "FAQs", href: "#" },
-    { label: "Terms of Service", href: "/terms" },
+    { label: "Centro de Ayuda", href: "#" },
+    { label: "Contáctanos", href: "#" },
+    { label: "Preguntas Frecuentes", href: "#" },
+    { label: "Términos de Servicio", href: "/terms" },
   ],
   legal: [
-    { label: "Privacy Policy", href: "/privacy" },
-    { label: "Cookie Policy", href: "#" },
-    { label: "Accessibility", href: "#" },
+    { label: "Política de Privacidad", href: "/privacy" },
+    { label: "Política de Cookies", href: "#" },
+    { label: "Accesibilidad", href: "#" },
   ],
 };
 
@@ -74,7 +74,7 @@ export default function Footer() {
                   fontSize: { xs: "0.8rem", sm: "0.875rem", md: "0.95rem" },
                 }}
               >
-                Your trusted partner in finding the perfect vehicle. Over 15,000 happy customers and counting.
+                Tu socio de confianza para encontrar el vehículo perfecto. Más de 15,000 clientes satisfechos y contando.
               </Typography>
               <Box sx={{ display: "flex", gap: { xs: 0.5, md: 1 } }}>
                 {socialLinks.map((social, index) => (
@@ -103,7 +103,7 @@ export default function Footer() {
                   fontSize: { xs: "0.85rem", sm: "0.9rem", md: "1rem" },
                 }}
               >
-                Company
+                Empresa
               </Typography>
               {footerLinks.company.map((link) => (
                 <Link
@@ -132,7 +132,7 @@ export default function Footer() {
                   fontSize: { xs: "0.85rem", sm: "0.9rem", md: "1rem" },
                 }}
               >
-                Support
+                Soporte
               </Typography>
               {footerLinks.support.map((link) => (
                 <Link
@@ -162,7 +162,7 @@ export default function Footer() {
                   fontSize: { xs: "0.85rem", sm: "0.9rem", md: "1rem" },
                 }}
               >
-                Stay Updated
+                Mantente Informado
               </Typography>
               <Typography
                 variant="body2"
@@ -172,7 +172,7 @@ export default function Footer() {
                   fontSize: { xs: "0.75rem", sm: "0.8rem", md: "0.875rem" },
                 }}
               >
-                Subscribe to our newsletter for the latest deals and updates.
+                Suscríbete a nuestro boletín para las últimas ofertas y actualizaciones.
               </Typography>
               <Box
                 sx={{
@@ -182,7 +182,7 @@ export default function Footer() {
                 }}
               >
                 <TextField
-                  placeholder="Enter your email"
+                  placeholder="Ingresa tu correo"
                   size="small"
                   sx={{
                     flex: { xs: "1", sm: 1 },
@@ -235,7 +235,7 @@ export default function Footer() {
                 textAlign: { xs: "center", sm: "left" },
               }}
             >
-              © {currentYear} Abbsium. All rights reserved.
+              © {currentYear} Abbsium. Todos los derechos reservados.
             </Typography>
 
             <Box
