@@ -122,7 +122,7 @@ export default function Catalog() {
                     </Grid>
                   ))}
               </Grid>
-              <Box sx={{ display: "flex", justifyContent: "center", mt: 4, mb: { xs: 7, md: -1 } }}>
+              <Box sx={{ display: "flex", justifyContent: "center", mt: 4, mb: { xs: 7, md: 6 } }}>
                 <Pagination
                   count={Math.ceil(sortedCars.length / itemsPerPage)}
                   page={page}
